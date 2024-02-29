@@ -8,12 +8,9 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 
 public class Main {
+    private static JDA jda;
 
-    public static void main(String[] args){
-
-    }
-}
-/*throws IOException, URISyntaxException, InterruptedException {
+    public static void main(String[] args) throws IOException, URISyntaxException, InterruptedException {
 
         EasyCommands ec = new EasyCommands();
         jda = ec.registerListeners(
@@ -22,4 +19,5 @@ public class Main {
                 new HelpCmd(ec)
         ).addEnabledCacheFlags().addGatewayIntents().buildJDA();
 
-    }*/
+    }
+}
