@@ -2,6 +2,8 @@ package japan.mori;
 
 import ca.tristan.easycommands.EasyCommands;
 import ca.tristan.easycommands.commands.defaults.HelpCmd;
+import japan.mori.commands.sayCmd;
+import japan.mori.commands.sayCommand;
 import net.dv8tion.jda.api.JDA;
 
 import java.io.IOException;
@@ -16,7 +18,7 @@ public class Main {
         jda = ec.registerListeners(
 
         ).addExecutor(
-                new HelpCmd(ec)
+                new HelpCmd(ec), new sayCommand()
         ).addEnabledCacheFlags().addGatewayIntents().buildJDA();
 
     }
